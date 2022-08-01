@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.app{
+  display: flex;
+  background-color: #2a2c2d;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 840px){
+  .app{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
