@@ -13,6 +13,6 @@ export type SidebarProps = {
 };
 
 export type MapProps = {
-  coordinate: [IPoints['latitude'], IPoints['longitude']] | undefined;
+  coordinate?: [IPoints['latitude'], IPoints['longitude']];
   zoom: number;
 };
