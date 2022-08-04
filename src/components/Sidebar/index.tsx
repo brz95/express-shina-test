@@ -3,12 +3,10 @@ import styles from './index.module.scss';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { IPoints, SidebarProps } from '../../types';
 
-const ZOOM_AFTER_SELECT = 15;
-
 const Sidebar = ({ setCoordinate, setZoom, places }: SidebarProps) => {
   const handleClick = (place: IPoints) => {
     setCoordinate([place.latitude, place.longitude]);
-    setZoom(ZOOM_AFTER_SELECT);
+    setZoom(15);
   };
 
   return (
